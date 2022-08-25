@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
                   .getingUserData(FirebaseAuth.instance.currentUser!.uid);
           await UtilityFunctions.saveUserLoggedInStatus(true);
           if (data.docs.isEmpty) {
-            nextScreenReplacement(context, HomePage());
+            nextScreenReplacement(context, const HomePage());
           } else {
             await UtilityFunctions.saveUserEmailSf(email);
             await UtilityFunctions.saveUserNameSF(data.docs[0]['fullName']);

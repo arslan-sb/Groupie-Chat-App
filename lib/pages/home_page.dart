@@ -6,6 +6,7 @@ import 'package:chat_app/services/auth_service.dart';
 import 'package:chat_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:http/http.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomePage extends StatefulWidget {
@@ -70,7 +71,8 @@ class _HomePageState extends State<HomePage> {
             CircleAvatar(
               radius: 50.r,
               backgroundImage: const NetworkImage(
-                "https://papik.pro/en/uploads/posts/2022-06/1655831806_1-papik-pro-p-cool-avatar-pictures-1.jpg",
+                '''
+https://helios-i.mashable.com/imagery/articles/01Fu4RHhDbubkZSMAPxrR8M/hero-image.fill.size_1248x702.v1623370566.jpg''',
               ),
             ),
             SizedBox(
